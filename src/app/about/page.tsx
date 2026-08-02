@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Users, Clock, Lock, ShieldCheck, Globe, Briefcase, MessageCircle, Share2 } from 'lucide-react';
+import { MessageCircle, Share2 } from 'lucide-react';
 // Make sure this import line includes all the icons used below
 
 export default function AboutPage() {
@@ -24,11 +24,11 @@ export default function AboutPage() {
 
         <div className="relative z-20 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 w-full">
           {/* Content Side */}
-          <div className="flex-1 space-y-6 text-white pt-24">
+          <div className="flex-1 space-y-6 text-white pt-32">
             <span className="text-[#C5A059] font-bold tracking-widest uppercase text-sm">
               About Patient First Worldwide
             </span>
-            <h1 className="text-5xl md:text-6xl font-serif leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif leading-tight">
               Your Trusted Companion Through <span className="text-[#C5A059]">Every Step of Your Medical Journey</span>
             </h1>
             <p className="text-lg text-stone-200 leading-relaxed max-w-lg">
@@ -37,16 +37,16 @@ export default function AboutPage() {
             <div className="pt-4">
               <Link 
                 href="/contact" 
-                className="inline-block bg-[#C5A059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#a8864a] transition"
+                className="inline-block bg-gradient-to-r from-[#C88A2B] to-[#fCDA7B] text-midnight px-8 py-3 rounded-full font-semibold hover:opacity-95 transition-all shadow-lg"
               >
-                Connect With Your Advocate
+                Connect With Our Team
               </Link>
             </div>
           </div>
 
           {/* Clean Image Side - Aligned to bottom edge */}
           {/* h-full and absolute bottom-0 stretches the container to the edge */}
-          <div className="flex-1 w-full h-[80vh] relative self-end">
+          <div className="flex-1 w-full h-[50vh] md:h-[80vh] relative self-end">
             <Image 
               src="/about-hero.webp" 
               alt="Medical Team" 
@@ -64,10 +64,10 @@ export default function AboutPage() {
           <h2 className="text-sm font-bold tracking-widest text-[#C5A059] uppercase mb-4">Our Story</h2>
           <h3 className="text-4xl font-serif text-[#172744] mb-6">Because Every Patient Deserves Someone by Their Side</h3>
           <p className="text-stone-600 mb-6 leading-relaxed">
-            Seeking medical care can be one of life's most challenging experiences. While providers focus on clinical excellence, we focus on the human experience.
+            Seeking medical care can be one of life&apos;s most challenging experiences. While healthcare providers focus on clinical care, we focus on the human experience.
           </p>
           <p className="text-[#172744] font-semibold italic">
-            "No patient should ever feel alone during their medical journey."
+            &ldquo;No patient should ever feel alone during their medical journey.&rdquo;
           </p>
         </div>
         {/* Right Side: Mission & Vision Cards */}
@@ -76,7 +76,7 @@ export default function AboutPage() {
     <div className="bg-[#172744] p-8 rounded-3xl text-white">
       <h3 className="text-sm font-bold tracking-widest text-[#C5A059] uppercase mb-3">Our Mission</h3>
       <p className="font-serif italic leading-snug">
-        "Putting Patients Before Everything Else: We transform complex healthcare journeys into experiences built on trust, comfort, and confidence."
+        &ldquo;Putting Patients Before Everything Else: We transform complex healthcare journeys into experiences built on trust, comfort, and confidence.&rdquo;
       </p>
     </div>
 
@@ -84,7 +84,7 @@ export default function AboutPage() {
     <div className="bg-[#172744] p-8 rounded-3xl text-white">
       <h3 className="text-sm font-bold tracking-widest text-[#C5A059] uppercase mb-3">Our Vision</h3>
       <p className="font-serif italic leading-snug">
-        "Redefining the Global Patient Experience: We envision a future where accessing healthcare across borders feels as comfortable as receiving care close to home."
+        &ldquo;Redefining the Global Patient Experience: We envision a future where accessing healthcare across borders feels as comfortable as receiving care close to home.&rdquo;
       </p>
     </div>
   </div>
@@ -125,8 +125,8 @@ export default function AboutPage() {
           text: "Collaborative approach for best outcomes." 
         }
       ].map((item, i) => (
-        <div key={i} className="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
-          <div className="text-[#C5A059] mb-6">
+        <div key={i} className="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-md transition text-center flex flex-col items-center group">
+          <div className="w-16 h-16 bg-gradient-to-r from-[#C88A2B] to-[#fCDA7B] text-midnight rounded-full flex items-center justify-center mb-6 shadow-md transition-transform group-hover:scale-110">
             {item.icon}
           </div>
           <h4 className="text-[#172744] font-bold mb-3">{item.title}</h4>
@@ -174,7 +174,7 @@ export default function AboutPage() {
       <div>
         <h2 className="text-sm font-bold tracking-widest text-[#C5A059] uppercase mb-2">Our Founder</h2>
         <h3 className="text-4xl font-serif text-[#172744]">Akhdiya Mirzokarimova</h3>
-        <p className="text-[#172744] font-medium text-lg mt-1">Senior Marketing Manager & Patient Advocate</p>
+        <p className="text-[#172744] font-medium text-lg mt-1">Senior Marketing Manager & Patient Journey Coordinator</p>
       </div>
 
       <div className="space-y-4 text-stone-600 leading-relaxed">
@@ -182,14 +182,14 @@ export default function AboutPage() {
           With a distinguished career in senior marketing management, Akhdiya Mirzokarimova has spent years mastering the art of building trust and delivering excellence. However, her true calling lies beyond the boardroom.
         </p>
         <p>
-          Driven by a deep-seated passion for human connection, she founded this organization to bridge the gap between complex medical systems and the individuals who need them most. Her mission is to ensure that no patient ever feels like "just another case."
+          Driven by a deep-seated passion for human connection, she founded this organization to bridge the gap between complex medical systems and the individuals who need them most. Her mission is to ensure that no patient ever feels like &ldquo;just another case.&rdquo;
         </p>
       </div>
 
       {/* CEO Message */}
       <div className="bg-[#F9F6F1] p-8 rounded-2xl border-l-4 border-[#C5A059]">
         <p className="font-serif italic text-[#172744] text-xl mb-4">
-          "I believe that healthcare is not just a service—it is a promise of dignity, comfort, and unwavering support. My commitment is to ensure that when you are at your most vulnerable, you have a partner who truly cares."
+          &ldquo;I believe that healthcare is not just a service—it is a promise of dignity, comfort, and unwavering support. My commitment is to ensure that when you are at your most vulnerable, you have a partner who truly cares.&rdquo;
         </p>
       </div>
 
@@ -228,7 +228,7 @@ export default function AboutPage() {
     <h3 className="text-4xl md:text-5xl font-serif mb-10">Personalized Care, Every Step of the Way</h3>
     
     <div className="space-y-6 text-lg md:text-xl text-stone-200 leading-relaxed font-light">
-      <p>Every patient's healthcare journey is unique. That is why we never believe in one-size-fits-all solutions.</p>
+      <p>Every patient&apos;s healthcare journey is unique. That is why we never believe in one-size-fits-all solutions.</p>
       <p>
         We take the time to understand your medical needs, personal preferences, cultural considerations, 
         and family concerns before developing a personalized care plan tailored specifically to your circumstances.
@@ -250,7 +250,7 @@ export default function AboutPage() {
         <div className="bg-[#172744] text-white p-16 rounded-3xl">
           <h3 className="text-2xl font-serif mb-6 text-[#C5A059]">Our Promise</h3>
           <p className="text-xl italic">
-            "Your journey becomes our responsibility. Your wellbeing becomes our priority. And your health will always come first."
+            &ldquo;Your journey becomes our responsibility. Your wellbeing becomes our priority. And your health will always come first.&rdquo;
           </p>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function AboutPage() {
     </h2>
 
     <p className="text-lg text-gray-600 leading-8 mb-4">
-      Whether you're exploring treatment options, seeking a trusted second opinion,
+      Whether you&apos;re exploring treatment options, seeking a trusted second opinion,
       or looking for compassionate guidance throughout your healthcare journey,
       <span className="font-semibold text-[#172744]"> Patient First Worldwide</span> is
       here to stand beside you.
@@ -278,9 +278,9 @@ export default function AboutPage() {
 
     <Link
       href="/contact"
-      className="inline-flex items-center justify-center bg-[#C5A059] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#a8864a] transition-all duration-300 shadow-lg hover:shadow-xl"
+      className="inline-flex items-center justify-center bg-gradient-to-r from-[#C88A2B] to-[#fCDA7B] text-midnight px-10 py-4 rounded-full font-semibold text-lg hover:opacity-95 transition-all duration-300 shadow-lg hover:shadow-xl"
     >
-      Talk to Our Care Team
+      Talk to Our Team
     </Link>
   </div>
 </section>

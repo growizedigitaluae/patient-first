@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Patient First Worldwide | Compassionate Medical Care",
-  description: "Your dedicated health companion. We stand by your side from consultation to full recovery.",
+  description: "Your trusted patient support and healthcare coordination partner. We stand by your side throughout your healthcare journey.",
 };
 
 export default function RootLayout({

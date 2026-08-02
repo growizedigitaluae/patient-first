@@ -35,7 +35,7 @@ export default function BlogPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-sm font-bold tracking-widest text-[#C5A059] uppercase mb-4">Our Blog</h1>
-          <h2 className="text-5xl font-serif text-[#172744]">Insights & Stories</h2>
+          <h2 className="text-4xl sm:text-5xl font-serif text-[#172744]">Insights & Stories</h2>
         </div>
 
        {/* Featured Post */}

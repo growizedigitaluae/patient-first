@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-midnight text-slate-300 py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-4">
@@ -15,15 +15,14 @@ export default function Footer() {
                 width={180} 
                 height={60} 
                 className="h-12 w-auto object-contain"
-                style={{ filter: "brightness(0) invert(1)" }} 
               />
             </Link>
-            <p className="max-w-sm leading-relaxed text-slate-300">
-              Your dedicated companion in medical excellence. We stand by your side from the first consultation until full recovery, ensuring peace of mind at every step.
+            <p className="max-w-sm leading-relaxed text-slate-400 text-sm">
+              Patients First Worldwide is an independent patient support and healthcare coordination company. We help patients navigate their healthcare journey by facilitating communication and coordinating non-clinical services with healthcare providers. Medical advice, diagnosis, treatment, and clinical decisions are provided exclusively by licensed healthcare professionals.
             </p>
           </div>
 
-          {/* Main Navigation Column */}
+          {/* Navigation Column */}
           <div>
             <h3 className="text-white font-serif text-lg mb-4">Navigation</h3>
             <ul className="space-y-2">
@@ -31,20 +30,29 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-metallic transition">About Us</Link></li>
               <li><Link href="/medical" className="hover:text-metallic transition">Medical Journey</Link></li>
               <li><Link href="/blog" className="hover:text-metallic transition">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-metallic transition">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Support Column */}
+          {/* Contact Column */}
           <div>
-            <h3 className="text-white font-serif text-lg mb-4">Support</h3>
+            <h3 className="text-white font-serif text-lg mb-4">Contact</h3>
             <p className="text-sm text-slate-300">24/7 Dedicated Care</p>
-            <a href="mailto:info@patientsfirstworldwide.com" className="block text-white font-medium mt-2 hover:text-metallic transition">
-              info@patientsfirstworldwide.com
+            <a href="mailto:info@patientfirstworldwide.com" className="block text-white font-medium mt-2 hover:text-metallic transition">
+              info@patientfirstworldwide.com
             </a>
             <a href="tel:+971566960486" className="block text-white font-medium mt-1 hover:text-metallic transition">
               +971 56 696 0486
             </a>
+          </div>
+
+          {/* Trust Column */}
+          <div>
+            <h3 className="text-white font-serif text-lg mb-4">Trust</h3>
+            <ul className="space-y-2">
+              <li><Link href="/privacy" className="hover:text-metallic transition">Privacy Commitment</Link></li>
+              <li><Link href="/destinations" className="hover:text-metallic transition">Partner Hospitals</Link></li>
+              <li><Link href="/department" className="hover:text-metallic transition">Departments</Link></li>
+            </ul>
           </div>
         </div>
 

@@ -58,7 +58,7 @@ const hospitalData: Record<string, {
     name: 'Medanta – The Medicity',
     location: 'Gurugram',
     country: 'India',
-    image: '/hospitals/medanta.webp',
+    image: '/hospitals/emdanta.webp',
     profile: 'Multi-super-specialty institute in Gurugram.',
     strengths: ['Cardiology', 'Oncology', 'Neurology', 'Orthopaedics', 'Gastroenterology', 'Liver and kidney transplantation'],
     recognition: 'International and national accreditation with research-led treatment programmes.',
@@ -167,7 +167,7 @@ export default function HospitalDetailPage({ params }: { params: Promise<{ id: s
   return (
     <main className="min-h-screen bg-[#F9F6F1] pb-24">
       {/* Header Banner */}
-      <section className="relative h-[280px] w-full flex items-center justify-center text-center px-6 overflow-hidden bg-[#172744]">
+      <section className="relative h-[280px] w-full flex items-center justify-center text-center px-6 overflow-hidden bg-[#172744] pt-16">
         <div className="absolute inset-0 opacity-20">
           <Image src={hospital.image} alt={hospital.name} fill className="object-cover" />
         </div>
@@ -218,14 +218,14 @@ export default function HospitalDetailPage({ params }: { params: Promise<{ id: s
           {/* Actions */}
           <div className="pt-6 border-t border-stone-200 flex flex-col sm:flex-row gap-4 items-center justify-between">
             <Link 
-              href="/destination" 
+              href="/destinations" 
               className="text-[#172744] font-semibold text-sm hover:underline"
             >
               ← Back to Global Destinations
             </Link>
             <Link 
               href="/contact" 
-              className="w-full sm:w-auto bg-[#3498db] hover:bg-[#2980b9] text-white font-medium px-8 py-3.5 rounded-xl shadow-md transition text-center"
+              className="w-full sm:w-auto bg-gradient-to-r from-[#C88A2B] to-[#fCDA7B] text-midnight font-medium px-8 py-3.5 rounded-full shadow-lg transition text-center hover:opacity-95"
             >
               Coordinate Care at this Hospital
             </Link>
