@@ -64,7 +64,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
-          className="lg:hidden flex flex-col items-center justify-center w-11 h-11 rounded-full border border-white/20 text-white"
+          className="lg:hidden flex flex-col items-center justify-center w-11 h-11 rounded-full border border-[#C5A059]/50 text-[#D4B26B]"
         >
           <span className={`block w-5 h-0.5 bg-current transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
           <span className={`block w-5 h-0.5 bg-current mt-1.5 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
